@@ -21,14 +21,14 @@
 // //     '2': 'test3',
 // // }
 
-const array = [{ color: 'white', id: 2 }, { color: 'black', id: 3 }, { color: 'black', id: 500}];
+// const array = [{ color: 'white', id: 2 }, { color: 'black', id: 3 }, { color: 'black', id: 500}];
 
-let result = array.reduce((acc, item) => {
-        acc = { ...acc, [`${item.color}`]: {...acc[item.color], [`${item.id}`]: item  }}
-        return acc
-},{})
+// let result = array.reduce((acc, item) => {
+//         acc = { ...acc, [`${item.color}`]: {...acc[item.color], [`${item.id}`]: item  }}
+//         return acc
+// },{})
 
-console.log(result);
+// console.log(result);
 
 // output = {
 //     'white': {
@@ -39,3 +39,5 @@ console.log(result);
 //      ‘500’: { color: ‘black’, id: 500 }
 //   }
 // }
+console.log('object');
+console.log(false != '0')
