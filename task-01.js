@@ -198,11 +198,27 @@ context, function(не успел придумать за 10 мин)*/
 
 // console.log(deleteDuplicates([1000, 555, 991, 'abasts', '1', '1', 'abasts', 1, 2, 3, 4, 4, 4, 5, 5, 6, 99, 100, 2, 2, 2, 3]));
 
-function withoutRepeat(arr) {
-    let arrWithoutSuplicates = arr.filter((item, index) => arr.indexOf(item) !== index)
+// function withoutRepeat(array) {
+//     const arrWithoutSuplicates = []
+//     const obj = {}
+    
+//     for (let index = 0; index < array.length; index++) {
+//         const element = array[index];
+//         if (!(element in obj)) {
+//             obj[element]=1
+//         }else{obj[element]+=1}
+        
+//     }
 
-    return arrWithoutSuplicates
-}
+//     const keys = Object.keys(obj)
+//     keys.forEach(key => {
+//         if (obj[key] === 1) {
+//             arrWithoutSuplicates.push(key)
+//         }
+//     })
 
-console.log(withoutRepeat([1000, 555, 991, 1, 2, 3, 4, 4, 4, 5, 5, 6, 99, 100, 2, 2, 2, 3]));
+//     return arrWithoutSuplicates
+// }
+
+// console.log(withoutRepeat([1000, 555, 991, 1, 2, 3, 4, 4, 4, 5, 5, 6, 99,101, 100, 2, 2, 2, 3]));
 
