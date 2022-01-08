@@ -222,3 +222,23 @@ context, function(не успел придумать за 10 мин)*/
 
 // console.log(withoutRepeat([1000, 555, 991, 1, 2, 3, 4, 4, 4, 5, 5, 6, 99,101, 100, 2, 2, 2, 3]));
 
+// function reverseString(str) {
+//   const result=str.split('').reverse().join('')
+//   return result
+// }
+
+// console.log(reverseString("hello"));
+
+// function factorialize(num) {
+//     let array = []
+//     for (let i = 1; i <= num; i++) {
+//         array.push(i)
+//     }
+//     console.log(array)
+//     let result = array.reduce((acc, item) => {
+//         return acc * item
+//     }, 1)
+//     return result
+// }
+// console.log(factorialize(5))
+
