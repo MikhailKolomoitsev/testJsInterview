@@ -201,13 +201,13 @@ context, function(не успел придумать за 10 мин)*/
 // function withoutRepeat(array) {
 //     const arrWithoutSuplicates = []
 //     const obj = {}
-    
+
 //     for (let index = 0; index < array.length; index++) {
 //         const element = array[index];
 //         if (!(element in obj)) {
 //             obj[element]=1
 //         }else{obj[element]+=1}
-        
+
 //     }
 
 //     const keys = Object.keys(obj)
@@ -242,3 +242,46 @@ context, function(не успел придумать за 10 мин)*/
 // }
 // console.log(factorialize(5))
 
+// function makeResult(str) {
+//     let numbers = str
+//         .split('').filter(i => i !== "+" && i !== "-" && i !== "×" && i !== "÷")
+//         .map(i => { return +i })
+
+//     let signs = str
+//         .split('')
+//         .filter(i => i === "+" || i === "-" || i === "×" || i === "÷")
+
+//     let acc = numbers[0]
+//     numbers.forEach((item, index, array) => {
+//         signs.forEach(i => {
+//             console.log(acc)
+//             if (i === "+") {
+//                 acc += array[index + 1]
+//             } else if ("-") {
+//                 acc = acc - array[index + 1]
+//             } else if ("×") {
+//                 acc = acc * array[index + 1]
+//             } else if ("÷") {
+//                 acc = acc / array[index + 1]
+//             }
+//         })
+//     })
+//     return acc
+// }
+
+// console.log(makeResult("5+3÷2+8×3-4"));
+
+// function makeResult(str) {
+//     let numbers = str.split('').map(i => {
+//         if (i === '÷') {
+//             return '/'
+//         } else if (i === '×') {
+//             return '*'
+//         }
+//         return i
+//     }).join('')
+//     let result = eval(numbers)
+//     return result
+// }
+
+// console.log(makeResult("1+3÷2+8×3-4"));
