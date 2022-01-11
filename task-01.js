@@ -325,16 +325,26 @@ context, function(не успел придумать за 10 мин)*/
 //     + '20,21,22,23,24\n'
 //     + '30,31,32,33,34'
 
-function firstNonConsecutive(arr) {
-    let result = null
+// function firstNonConsecutive(arr) {
+//     let result = null
 
-    for (let i = 0; i <= arr.length - 1; i++) {
-        if (arr[i + 1] - arr[i] > 1) {
-            result=arr[i+1]
-        }
-    }
+//     for (let i = 0; i <= arr.length - 1; i++) {
+//         if (arr[i + 1] - arr[i] > 1) {
+//             result=arr[i+1]
+//         }
+//     }
 
-    return result
-}
+//     return result
+// }
 
-console.log(firstNonConsecutive([8, 9, 10, 11, 13, 15, 16]));
+// console.log(firstNonConsecutive([8, 9, 10, 11, 13, 15, 16]));
+
+let arr = [];
+arr[1] = 1;
+arr[3] = 33;
+
+console.log(arr.length);
+
+let a = new Array(1, 2), b = new Array(3);
+console.log(a, b);
+console.log(a[0] + b[0]);
