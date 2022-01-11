@@ -285,3 +285,56 @@ context, function(не успел придумать за 10 мин)*/
 // }
 
 // console.log(makeResult("1+3÷2+8×3-4"));
+
+// function sumOfDifferences(arr) {
+//   let sortedArr=[...arr].sort((a, b)=>b-a)
+//   let result=0
+//     for (let i = 0; i < sortedArr.length-1; i++){
+//     result+=sortedArr[i]-sortedArr[i+1]
+//   }
+
+//   return result
+// }
+// console.log(sumOfDifferences([10, 2, 1]))
+
+// function toCsvText(array) {
+//     let result = [...array]
+//     return result
+//         .map(i => {
+//             return i.map(num => `${num}`)
+//         })
+//         .map(i => {
+//             i[i.length - 1] = i[i.length - 1] + '\n'
+//             return i
+//         })
+//         .map(i => i.join(','))
+//         .join('')
+//         .slice(0, -1)
+// }
+
+
+// console.log(toCsvText([[0, 1, 2, 3, 4],
+// [10, 11, 12, 13, 14],
+// [20, 21, 22, 23, 24],
+// [30, 31, 32, 33, 34]]))
+
+
+//      output:
+//      '0,1,2,3,4\n'
+//     + '10,11,12,13,14\n'
+//     + '20,21,22,23,24\n'
+//     + '30,31,32,33,34'
+
+function firstNonConsecutive(arr) {
+    let result = null
+
+    for (let i = 0; i <= arr.length - 1; i++) {
+        if (arr[i + 1] - arr[i] > 1) {
+            result=arr[i+1]
+        }
+    }
+
+    return result
+}
+
+console.log(firstNonConsecutive([8, 9, 10, 11, 13, 15, 16]));
