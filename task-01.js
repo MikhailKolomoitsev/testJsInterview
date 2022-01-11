@@ -339,12 +339,16 @@ context, function(не успел придумать за 10 мин)*/
 
 // console.log(firstNonConsecutive([8, 9, 10, 11, 13, 15, 16]));
 
-let arr = [];
-arr[1] = 1;
-arr[3] = 33;
+// let arr = [];
+// arr[1] = 1;
+// arr[3] = 33;
 
-console.log(arr.length);
+// console.log(arr.length);
 
-let a = new Array(1, 2), b = new Array(3);
-console.log(a, b);
-console.log(a[0] + b[0]);
+// let a = new Array(1, 2), b = new Array(3);
+// console.log(a, b);
+// console.log(a[0] + b[0]);
+
+// let a = [1, 2]
+
+//     (function () { alert('hi') })()
