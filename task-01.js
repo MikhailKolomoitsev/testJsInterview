@@ -353,10 +353,14 @@ context, function(не успел придумать за 10 мин)*/
 
 //     (function () { alert('hi') })()
 
-function addTogether() {
-    const [first, second] = arguments
-    console.log(first, second)
+// function addTogether() {
+//     const [first, second] = arguments
+//     console.log(first, second)
 
-}
+// }
 
-addTogether(2, 3);
+// addTogether(2, 3);
+var pok = ['1', '2', '3', '4']
+const [one, two, three, four] = pok
+console.log([one, two, three, four]);
+
