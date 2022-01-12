@@ -53,8 +53,8 @@
 
 // function revertNumber(number) {
 //     let string=number.toString()
-//     let result = [...string].sort((a, b) => b - a).join('')
-//     return +result
+//     let result = +string.split('').reverse().join('')
+//     return result
 // }
 // console.log(revertNumber(129429));
 // revertNumber(212312)
@@ -352,3 +352,11 @@ context, function(не успел придумать за 10 мин)*/
 // let a = [1, 2]
 
 //     (function () { alert('hi') })()
+
+function addTogether() {
+    const [first, second] = arguments
+    console.log(first, second)
+
+}
+
+addTogether(2, 3);
