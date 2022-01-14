@@ -364,12 +364,56 @@ context, function(не успел придумать за 10 мин)*/
 // const [one, two, three, four] = pok
 // console.log([one, two, three, four]);
 
-function makeHtmlStr(str) {
-    return str
-        .replace(/\W|_/g, " ")
-        .split(/\s|_|(?=(A_Z))/)
-        .filter(i => i !== '' && i !== ' ' && typeof (i) !== 'undefined')
-        .join('-')
+// function makeHtmlStr(str) {
+//     return str
+//         .replace(/\W|_/g, " ")
+//         .split(/\s|_|(?=(A_Z))/)
+//         .filter(i => i !== '' && i !== ' ' && typeof (i) !== 'undefined')
+//         .join('-')
+// }
+
+// console.log(makeHtmlStr(' I am WorkingOn=Yach-here'))
+
+let data = new Date('01/14/2022')
+
+function convertToDayOfWeek(str) {
+    let ddmmyyyy = [str.split('/')[1], str.split('/')[0], str.split('/')[2]]
+    let data = new Date(ddmmyyyy)
+    let numDay = data.getDay()
+    
+    switch (numDay) {
+        case 1:
+            return 'Monday'
+            break;
+        
+        case 2:
+            return 'Tuesday'
+            break;
+        
+        case 3:
+            return 'Wednesday'
+            break;
+        
+        case 4:
+            return 'Thursday'
+            break;
+        
+        case 5:
+            return 'Friday'
+            break;
+        
+        case 6:
+            return 'Saturday'
+            break;
+        
+        case 7:
+            return 'Sunday'
+            break;
+    
+        default:
+            return '???'
+            break;
+    }
 }
 
-console.log(makeHtmlStr(' I am WorkingOn=Yach-here'))
+console.log(convertToDayOfWeek('14/01/2022'))
