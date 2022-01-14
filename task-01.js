@@ -360,7 +360,16 @@ context, function(не успел придумать за 10 мин)*/
 // }
 
 // addTogether(2, 3);
-var pok = ['1', '2', '3', '4']
-const [one, two, three, four] = pok
-console.log([one, two, three, four]);
+// var pok = ['1', '2', '3', '4']
+// const [one, two, three, four] = pok
+// console.log([one, two, three, four]);
 
+function makeHtmlStr(str) {
+    return str
+        .replace(/\W|_/g, " ")
+        .split(/\s|_|(?=(A_Z))/)
+        .filter(i => i !== '' && i !== ' ' && typeof (i) !== 'undefined')
+        .join('-')
+}
+
+console.log(makeHtmlStr(' I am WorkingOn=Yach-here'))
