@@ -374,46 +374,56 @@ context, function(не успел придумать за 10 мин)*/
 
 // console.log(makeHtmlStr(' I am WorkingOn=Yach-here'))
 
-let data = new Date('01/14/2022')
+// let data = new Date('01/14/2022')
 
-function convertToDayOfWeek(str) {
-    let ddmmyyyy = [str.split('/')[1], str.split('/')[0], str.split('/')[2]]
-    let data = new Date(ddmmyyyy)
-    let numDay = data.getDay()
+// function convertToDayOfWeek(str) {
+//     let ddmmyyyy = [str.split('/')[1], str.split('/')[0], str.split('/')[2]]
+//     let data = new Date(ddmmyyyy)
+//     let numDay = data.getDay()
     
-    switch (numDay) {
-        case 1:
-            return 'Monday'
-            break;
+//     switch (numDay) {
+//         case 1:
+//             return 'Monday'
+//             break;
         
-        case 2:
-            return 'Tuesday'
-            break;
+//         case 2:
+//             return 'Tuesday'
+//             break;
         
-        case 3:
-            return 'Wednesday'
-            break;
+//         case 3:
+//             return 'Wednesday'
+//             break;
         
-        case 4:
-            return 'Thursday'
-            break;
+//         case 4:
+//             return 'Thursday'
+//             break;
         
-        case 5:
-            return 'Friday'
-            break;
+//         case 5:
+//             return 'Friday'
+//             break;
         
-        case 6:
-            return 'Saturday'
-            break;
+//         case 6:
+//             return 'Saturday'
+//             break;
         
-        case 7:
-            return 'Sunday'
-            break;
+//         case 7:
+//             return 'Sunday'
+//             break;
     
-        default:
-            return '???'
-            break;
-    }
+//         default:
+//             return '???'
+//             break;
+//     }
+// }
+
+// console.log(convertToDayOfWeek('14/01/2022'))
+
+function sum(a) {
+    return function (b) {
+        if (b) {
+        return sum(a+b)
+        }
+        return a
 }
-
-console.log(convertToDayOfWeek('14/01/2022'))
+}
+console.log(sum(1)(2)(3)(4)())
